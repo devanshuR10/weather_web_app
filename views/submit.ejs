@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather in <%= city %></title>
+    <link rel="stylesheet" href="/submit.css">
+</head>
+<body>
+  <% if (temperature !== null) { %>
+    <h1>Weather in <%= city %></h1>
+    <p><strong>Temperature:</strong> <%= temperature %>°C</p>
+    <p><strong>Condition:</strong> <%= description %></p>
+    <p><strong>Humidity:</strong> <%= humidity %>%</p>
+    <p><strong>Wind Speed:</strong> <%= windSpeed %> m/s</p>
+    <p><strong>Longitude:</strong> <%= longitude %></p>
+    <p><strong>Latitude:</strong> <%= latitude %></p>
+  <% } else { %>
+    <h1><%= error %></h1>
+  <% } %>
+
+  <a href="/">Go back</a>
+</body>
+</html>

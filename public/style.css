@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #78B9B5;
+    padding: 24px 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+img {
+    width: 120px;
+    height: auto;
+    margin-right: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+h1 {
+    text-align: center;
+    color: #0F828C;
+    font-size: 2.5rem;
+    margin-top: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(120,185,181,0.15);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 32px auto 0 auto;
+    background-color: #ffffffcc;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(15,130,140,0.10);
+    max-width: 400px;
+}
+
+input[type="text"], input[type="search"] {
+    padding: 12px 16px;
+    border: 2px solid #78B9B5;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="search"]:focus {
+    border-color: #0F828C;
+}
+
+button {
+    color: #fff;
+    background: linear-gradient(90deg, #0F828C 60%, #78B9B5 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(15,130,140,0.10);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #78B9B5 60%, #0F828C 100%);
+    color: #222;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(15,130,140,0.18);
+    border: none;
+}
